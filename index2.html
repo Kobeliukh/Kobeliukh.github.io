@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/animate.css">
+		<script src="js/wow.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="habit_container">
+			<div class="habit_header">
+			 	<div class="habit_left_header">
+			 		<img src="img/SHKM.png">
+			 		<img src="img/wave.png" width="70%">
+			 	</div>
+			 	<div class="habit_right_header">
+			 		<div class="habit_up_menu up_menu">
+			 			<a href="index.html"><h1>Головна</h1></a>
+			 			<a href="index1.html"><h1>Світ майбутнього</h1></a>
+			 			<a href="#"><h1>Навичка навчання</h1></a>
+			 		</div>
+			 		<div class="habit_down_menu up_menu">
+			 			<a href="index3.html"><h1>Вчимось вчитися</h1></a>
+			 			<a href="index4.html"><h1>Never stop learning</h1></a>
+			 			<a href="index5.html"><h1>Моя програма</h1></a>
+			 		</div>
+			 	</div>
+			</div>
+			<div class="habit_content">
+			 	<div class="habit_left_content">
+			 		<h1 class="wow fadeInLeft">Навичка навчання</h1>
+			 		<img src="img/test.gif" width="97%" class="position">
+			 	</div>
+			 	<div class="habit_right_content">
+			 		<div class="test">
+			 			<div class="up_test">
+			 				<h1 class="wow fadeInDown">Протестуй себе!</h1>
+			 			</div>
+			 			<div class="down_test">
+			 				<span class="wow fadeInRight">
+									<script type="text/javascript">
+									var questions=[
+									{
+										text: "Навчання самостійно, без постороньої допомоги?",
+										answers: ["Навчання",
+											  "Пришвидшене навчання",
+											  "Самонавчання"],
+										correctAnswer: 2 // нумерация ответов с нуля!
+									},
+									{
+										text: "Чи великі можливості для самонавчання в наш час, чи навчатись можна тільки з викладачем, репетитором тощо?",
+										answers: ["Великі",
+											  "Тільки з викладачем",
+											  "Навчання взагалі не потрібне"],
+										correctAnswer: 0
+									},
+									{
+										text: "Пришвидшене навчання нічим не гірше стандартного, поглибленого навчання?",
+										answers: ["Так",
+											  "Ні",
+											  "І те і те навчання по своєму добре"],
+										correctAnswer: 1
+									},
+									{
+										text: "Ви маєте приділяти час розвитку та самонавчанню?",
+										answers: ["Так",
+											  "Ні"],
+										correctAnswer: 0
+									},
+									{
+										text: "Скільки часу потрібно витрачати на самонавчання?",
+										answers: ["Не витрачати",
+											  "1-3 години",
+											  "4-5 годин",
+											  "Більшу частину дня"],
+										correctAnswer: 0
+									},
+									{
+										text: "Потрібно розвиватися в одній сфері, чи опановувати різні?",
+										answers: ["Різні",
+											  "Одній",
+											  "Не потрібно розвиватися"],
+										correctAnswer: 0
+									},
+									{
+										text: "Чому треба надавати перевагу?",
+										answers: ["Прочитати книгу  чи дізнатися щось цікаве в інтернеті",
+											  "Пограти за комп'ютером"],
+										correctAnswer: 0
+									},
+									{
+										text: "Чому треба надавати перевагу?",
+										answers: ["Фізичним вправам та спорту",
+											  "Піти погуляти на карантині"],
+										correctAnswer: 0
+									},
+									{
+										text: "Чи важливо мати хобі?",
+										answers: ["Так, дуже",
+											  "Не обов'язково",
+											  "Не важливо"],
+										correctAnswer: 0
+									},
+									{
+										text: "Чи потрібно відпочивати?",
+										answers: ["Так",
+											  "Ні"],
+										correctAnswer: 0
+									},
+									{
+										text: "Чи самонавчається вчитель?",
+										answers: ["Так",
+											  "Ні"],
+										correctAnswer: 0
+									}
+									];
+
+									var yourAns = new Array;
+									var score = 0;
+
+									function Engine(question, answer) {yourAns[question]=answer;}
+
+									function Score(){
+									   var answerText = "Результати:\n";
+									   for(var i = 0; i < yourAns.length; ++i){
+										var num = i+1;
+										answerText=answerText+"\n    Питання №"+ num +"";
+										if(yourAns[i]!=questions[i].correctAnswer){
+										    answerText=answerText+"\n    Правильна відповідь: " +
+											questions[i].answers[questions[i].correctAnswer] + "\n";
+										  }
+									        else{
+										    answerText=answerText+": Вірно! \n";
+										    ++score;
+										    }
+									       }
+
+									   answerText=answerText+"\nВсього вірних відповідей: "+score+"\n";
+
+									   alert(answerText);
+									   yourAns = [];
+									   score = 0;
+									   clearForm("quiz");
+									}
+									function clearForm(name) {
+									   var f = document.forms[name];
+									   for(var i = 0; i < f.elements.length; ++i) {
+										if(f.elements[i].checked)
+											f.elements[i].checked = false;
+									}
+									}
+									</script>
+
+									<style>
+									span.quest {font-weight: bold;}
+									span.quest {color: #daaee8;}
+									</style>
+
+									<h1><script>document.write(title)</script></h1>
+									<h2><script>document.write(subtitle)</script></h2>
+
+									<form name="quiz">
+									<ol>
+									<script>
+									for(var q=0; q<questions.length; ++q) {
+									   var question = questions[q];
+									   var idx = 1 + q;
+
+									   document.writeln('<li><span class="quest">' + question.text + '</span><br/>');
+									   for(var i in question.answers) {
+										document.writeln('<input type=radio name="q' + idx + '" value="' + i +
+										'" onClick="Engine(' + q + ', this.value)">' + question.answers[i] + '<br/>');
+									}
+									}
+									</script>
+									</ol>
+
+									</form>
+									
+
+
+
+
+									<div class="slider">
+							    <div class="slider__wrapper">
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Навчання самостійно, без постороньої допомоги?</span><br>
+											<input type="radio" name="q1" value="0" onclick="Engine(0, this.value)">Навчання<br>
+											<input type="radio" name="q1" value="1" onclick="Engine(0, this.value)">Пришвидшене навчання<br>
+											<input type="radio" name="q1" value="2" onclick="Engine(0, this.value)">Самонавчання<br>
+										</li>
+							        </div>
+							      </div>
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Чи великі можливості для самонавчання в наш час, чи навчатись можна тільки з викладачем, репетитором тощо?</span><br>
+											<input type="radio" name="q2" value="0" onclick="Engine(1, this.value)">Великі<br>
+											<input type="radio" name="q2" value="1" onclick="Engine(1, this.value)">Тільки з викладачем<br>
+											<input type="radio" name="q2" value="2" onclick="Engine(1, this.value)">Навчання взагалі не потрібне<br>
+										</li>
+							        </div>
+							      </div>
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Пришвидшене навчання нічим не гірше стандартного, поглибленого навчання, а часу займає меньше?</span><br>
+											<input type="radio" name="q3" value="0" onclick="Engine(2, this.value)">Так<br>
+											<input type="radio" name="q3" value="1" onclick="Engine(2, this.value)">Ні<br>
+											<input type="radio" name="q3" value="2" onclick="Engine(2, this.value)">І те і те навчання по своєму добре<br>
+										</li>
+							        </div>
+							      </div>
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Ви маєте приділяти час розвитку та самонавчанню?</span><br>
+											<input type="radio" name="q4" value="0" onclick="Engine(3, this.value)">Так<br>
+											<input type="radio" name="q4" value="1" onclick="Engine(3, this.value)">Ні<br>
+										</li>
+							        </div>
+							      </div>
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Скільки часу потрібно витрачати на самонавчання?</span><br>
+											<input type="radio" name="q5" value="0" onclick="Engine(4, this.value)">Не витрачати<br>
+											<input type="radio" name="q5" value="1" onclick="Engine(4, this.value)">1-3 години<br>
+											<input type="radio" name="q5" value="2" onclick="Engine(4, this.value)">4-5 годин<br>
+											<input type="radio" name="q5" value="3" onclick="Engine(4, this.value)">Більшу частину дня<br>
+										</li>
+							        </div>
+							      </div>
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Потрібно розвиватися в одній сфері, чи опановувати різні?</span><br>
+											<input type="radio" name="q6" value="0" onclick="Engine(5, this.value)">Різні<br>
+											<input type="radio" name="q6" value="1" onclick="Engine(5, this.value)">Одній<br>
+											<input type="radio" name="q6" value="2" onclick="Engine(5, this.value)">Не потрібно розвиватися<br>
+										</li>
+							        </div>
+							      </div>
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Чому треба надавати перевагу?</span><br>
+											<input type="radio" name="q7" value="0" onclick="Engine(6, this.value)">Прочитати книгу  чи дізнатися щось цікаве в інтернеті<br>
+											<input type="radio" name="q7" value="1" onclick="Engine(6, this.value)">Пограти за комп'ютером<br>
+										</li>
+							        </div>
+							      </div>
+							      <div class="slider__item">
+							        <div style="height: 250px; margin-left: 20.5%;">
+							        	<li>
+							        		<span class="quest">Чому треба надавати перевагу?</span><br>
+											<input type="radio" name="q8" value="0" onclick="Engine(7, this.value)">Фізичним вправам та спорту<br>
+											<input type="radio" name="q8" value="1" onclick="Engine(7, this.value)">Піти погуляти на карантині<br>
+										</li>
+							        </div>
+							      </div>
+							    </div>
+							    <a class="slider__control slider__control_left" href="#" role="button"></a>
+							    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+							  </div>
+
+							  <script>
+							    'use strict';
+							    var multiItemSlider = (function () {
+							      return function (selector, config) {
+							        var
+							          _mainElement = document.querySelector(selector), // основный элемент блока
+							          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+							          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+							          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+							          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+							          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+							          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+							          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+							          _positionLeftItem = 0, // позиция левого активного элемента
+							          _transform = 0, // значение транфсофрмации .slider_wrapper
+							          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+							          _items = []; // массив элементов
+							        // наполнение массива _items
+							        _sliderItems.forEach(function (item, index) {
+							          _items.push({ item: item, position: index, transform: 0 });
+							        });
+
+							        var position = {
+							          getMin: 0,
+							          getMax: _items.length - 1,
+							        }
+
+							        var _transformItem = function (direction) {
+							          if (direction === 'right') {
+							            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+							              return;
+							            }
+							            if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+							              _sliderControlLeft.classList.add('slider__control_show');
+							            }
+							            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+							              _sliderControlRight.classList.remove('slider__control_show');
+							            }
+							            _positionLeftItem++;
+							            _transform -= _step;
+							          }
+							          if (direction === 'left') {
+							            if (_positionLeftItem <= position.getMin) {
+							              return;
+							            }
+							            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+							              _sliderControlRight.classList.add('slider__control_show');
+							            }
+							            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+							              _sliderControlLeft.classList.remove('slider__control_show');
+							            }
+							            _positionLeftItem--;
+							            _transform += _step;
+							          }
+							          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+							        }
+
+							        // обработчик события click для кнопок "назад" и "вперед"
+							        var _controlClick = function (e) {
+							          if (e.target.classList.contains('slider__control')) {
+							            e.preventDefault();
+							            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+							            _transformItem(direction);
+							          }
+							        };
+
+							        var _setUpListeners = function () {
+							          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+							          _sliderControls.forEach(function (item) {
+							            item.addEventListener('click', _controlClick);
+							          });
+							        }
+
+							        // инициализация
+							        _setUpListeners();
+
+							        return {
+							          right: function () { // метод right
+							            _transformItem('right');
+							          },
+							          left: function () { // метод left
+							            _transformItem('left');
+							          }
+							        }
+
+							      }
+							    }());
+
+							    var slider = multiItemSlider('.slider')
+
+							  </script>
+				 			<input type="button" onClick="Score()" value="Перевірити результати" / class="button wow fadeInUp">
+
+				 		</div>
+			 		</div>
+			 	</div>
+			</div>
+			<div class="habit_footer">
+			 	<h1>Школа комп'ютерної майстерності, 2020</h1>
+			</div>
+		</div>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+</html>
