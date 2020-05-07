@@ -11,9 +11,28 @@
 	<body>
 		<div class="habit_container">
 			<div class="habit_header">
-			 	<div class="habit_left_header">
+			 	<div class="habit_left_header left_header">
 			 		<img src="img/SHKM.png">
 			 		<img src="img/wave.png" width="70%">
+			 		<button class="menu-toggle" style="cursor: pointer;"></button>
+					<nav>
+					  <ul class="menu">
+					    <li data-text="Головна"><a href="index.html">Головна</a></li>
+					    <li data-text="Світ майбутнього"><a href="index1.html">Світ майбутнього</a></li>
+					    <li data-text="Навичка навчання"><a href="#">Навичка навчання</a></li>
+					    <li data-text="Вчимось вчитися"><a href="index3.html">Вчимось вчитися</a></li>
+					    <li data-text="Never stop learning"><a href="index4.html">Never stop learning</a></li>
+					    <li data-text="Моя програма"><a href="index5.html">Моя програма</a></li>
+					  </ul>
+					</nav>
+					<article>
+					  
+					</article>
+					  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+					  
+
+					    <script  src="js/index1.js"></script>
 			 	</div>
 			 	<div class="habit_right_header">
 			 		<div class="habit_up_menu up_menu">
@@ -43,7 +62,7 @@
 									<script type="text/javascript">
 									var questions=[
 									{
-										text: "Навчання самостійно, без постороньої допомоги?",
+										text: "Навчання самостійно, без сторонньої допомоги?",
 										answers: ["Навчання",
 											  "Пришвидшене навчання",
 											  "Самонавчання"],
@@ -186,9 +205,9 @@
 									<div class="slider">
 							    <div class="slider__wrapper">
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
-							        		<span class="quest">Навчання самостійно, без постороньої допомоги?</span><br>
+							        		<span class="quest">Навчання самостійно, без сторонньої допомоги?</span><br>
 											<input type="radio" name="q1" value="0" onclick="Engine(0, this.value)">Навчання<br>
 											<input type="radio" name="q1" value="1" onclick="Engine(0, this.value)">Пришвидшене навчання<br>
 											<input type="radio" name="q1" value="2" onclick="Engine(0, this.value)">Самонавчання<br>
@@ -196,7 +215,7 @@
 							        </div>
 							      </div>
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
 							        		<span class="quest">Чи великі можливості для самонавчання в наш час, чи навчатись можна тільки з викладачем, репетитором тощо?</span><br>
 											<input type="radio" name="q2" value="0" onclick="Engine(1, this.value)">Великі<br>
@@ -206,7 +225,7 @@
 							        </div>
 							      </div>
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
 							        		<span class="quest">Пришвидшене навчання нічим не гірше стандартного, поглибленого навчання, а часу займає меньше?</span><br>
 											<input type="radio" name="q3" value="0" onclick="Engine(2, this.value)">Так<br>
@@ -216,7 +235,7 @@
 							        </div>
 							      </div>
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
 							        		<span class="quest">Ви маєте приділяти час розвитку та самонавчанню?</span><br>
 											<input type="radio" name="q4" value="0" onclick="Engine(3, this.value)">Так<br>
@@ -225,7 +244,7 @@
 							        </div>
 							      </div>
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
 							        		<span class="quest">Скільки часу потрібно витрачати на самонавчання?</span><br>
 											<input type="radio" name="q5" value="0" onclick="Engine(4, this.value)">Не витрачати<br>
@@ -236,7 +255,7 @@
 							        </div>
 							      </div>
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
 							        		<span class="quest">Потрібно розвиватися в одній сфері, чи опановувати різні?</span><br>
 											<input type="radio" name="q6" value="0" onclick="Engine(5, this.value)">Різні<br>
@@ -246,7 +265,7 @@
 							        </div>
 							      </div>
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
 							        		<span class="quest">Чому треба надавати перевагу?</span><br>
 											<input type="radio" name="q7" value="0" onclick="Engine(6, this.value)">Прочитати книгу  чи дізнатися щось цікаве в інтернеті<br>
@@ -255,7 +274,7 @@
 							        </div>
 							      </div>
 							      <div class="slider__item">
-							        <div style="height: 250px; margin-left: 20.5%;">
+							        <div style="height: 250px; margin-left: 15.5%;">
 							        	<li>
 							        		<span class="quest">Чому треба надавати перевагу?</span><br>
 											<input type="radio" name="q8" value="0" onclick="Engine(7, this.value)">Фізичним вправам та спорту<br>
